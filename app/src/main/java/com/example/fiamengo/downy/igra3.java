@@ -85,6 +85,7 @@ public class igra3 extends FragmentActivity { //fragment jer ne želim traku s n
         text.setText(slika_iz_baze.getnaziv().substring(0, duljina-3));
 
         //promijeni naslov
+
         TextView naslov=(TextView)findViewById(R.id.igra3opis);
         if(level==1)
             naslov.setText("Što je na slici? (Razina 1)");

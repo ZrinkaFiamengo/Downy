@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.fiamengo.downy.igra1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Što je na slici? (Razina 1)"
+        android:id="@+id/igra1opis"
+        android:layout_marginTop="30px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/igra1slika"
+        android:layout_below="@+id/igra1opis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/igra1slika"
+        android:id="@+id/relativeLayout">
+        <Button
+            android:id="@+id/igra1potvrdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="Igra1OnClickPotvrdi"
+            android:text="Pošalji"/>
+        <EditText
+            android:id="@+id/igra1unos"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/igra1potvrdi"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="(0 slova)"
+        android:id="@+id/igra1broj_slova"
+        android:layout_below="@+id/igra1slika"
+        android:layout_alignStart="@+id/igra1opis"
+        android:layout_alignLeft="@+id/igra1opis"
+        android:layout_marginLeft="100px"/>
+
+
+</RelativeLayout>

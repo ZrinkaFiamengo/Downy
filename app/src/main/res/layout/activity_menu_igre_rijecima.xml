@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_igre_rijecima"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Što želiš pogađati?"
+        android:id="@+id/menu1opis"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Cijela riječ"
+        android:onClick="Igra1OnClick"
+        android:id="@+id/igra1"
+        android:layout_alignStart="@+id/menu1opis"
+        android:layout_alignLeft="@+id/menu1opis"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/igra3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Prvo slovo"
+        android:onClick="Igra2OnClick"
+        android:id="@+id/igra2"
+        android:layout_below="@+id/menu1opis"
+        android:layout_alignStart="@+id/menu1opis"
+        android:layout_alignLeft="@+id/menu1opis"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Zadnja 3 slova"
+        android:onClick="Igra3OnClick"
+        android:id="@+id/igra3"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/igra4"
+        android:layout_alignStart="@+id/menu1opis"
+        android:layout_alignLeft="@+id/menu1opis"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Prva 3 slova"
+        android:onClick="Igra4OnClick"
+        android:id="@+id/igra4"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/igra2"
+        android:layout_alignStart="@+id/menu1opis"
+        android:layout_alignLeft="@+id/menu1opis"/>
+
+
+</RelativeLayout>

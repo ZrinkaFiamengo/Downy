@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.fiamengo.downy.igra_prijedlozi">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Odaberi točan odgovor!"
+        android:id="@+id/igra_prijedloziopis"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/igra_prijedlozislika"
+        android:layout_below="@+id/igra_prijedloziopis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/igra_prijedlozislika"
+        android:layout_alignStart="@+id/igra_prijedloziopis"
+        android:layout_alignLeft="@+id/igra_prijedloziopis"
+        android:id="@+id/grupa">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="izbor1"
+        android:id="@+id/izbor1"
+        android:layout_below="@+id/igra_prijedlozislika"
+        android:layout_alignStart="@+id/igra_prijedloziopis"
+        android:layout_alignLeft="@+id/igra_prijedloziopis"
+        android:layout_marginTop="40dp"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="izbor2"
+        android:id="@+id/izbor2"
+        android:layout_below="@+id/izbor1"
+        android:layout_alignStart="@+id/igra_prijedloziopis"
+        android:layout_alignLeft="@+id/igra_prijedloziopis"
+        android:layout_marginTop="20dp"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="izbor3"
+        android:id="@+id/izbor3"
+        android:layout_below="@+id/izbor2"
+        android:layout_alignStart="@+id/igra_prijedloziopis"
+        android:layout_alignLeft="@+id/igra_prijedloziopis"
+        android:layout_marginTop="20dp"
+        android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+</RelativeLayout>

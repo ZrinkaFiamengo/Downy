@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Downy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_igra1">igra1</string>
+    <string name="title_activity_igra2">igra2</string>
+    <string name="title_activity_igra3">igra3</string>
+    <string name="title_activity_menu_igre_rijecima">menu_igre_rijecima</string>
+    <string name="title_activity_igra4">igra4</string>
+    <string name="title_activity_igra_prijedlozi">igra_prijedlozi</string>
+    <string name="title_activity_igra5">igra5</string>
+
+</resources>

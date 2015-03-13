@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fiamengo.downy" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Downy"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".main"
+            android:label="Downy"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".igra1"
+            android:label="@string/title_activity_igra1"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".igra2"
+            android:label="@string/title_activity_igra2"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".igra3"
+            android:label="@string/title_activity_igra3"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".menu_igre_rijecima"
+            android:label="@string/title_activity_menu_igre_rijecima"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".igra4"
+            android:label="@string/title_activity_igra4"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".igra_prijedlozi"
+            android:label="@string/title_activity_igra_prijedlozi"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

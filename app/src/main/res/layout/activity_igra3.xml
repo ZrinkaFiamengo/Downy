@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.fiamengo.downy.igra3">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Što je na slici? (Razina 1)"
+        android:id="@+id/igra3opis"
+        android:layout_marginTop="30px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/igra3slika"
+        android:layout_below="@+id/igra3opis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/igra3slika"
+        android:layout_alignEnd="@+id/igra3opis"
+        android:layout_alignRight="@+id/igra3opis">
+        <Button
+            android:id="@+id/igra3potvrdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="Igra3OnClickPotvrdi"
+            android:text="Pošalji"/>
+        <EditText
+            android:id="@+id/igra3unos"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:layout_toStartOf="@+id/igra3potvrdi"
+            android:layout_toLeftOf="@+id/igra3potvrdi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="aaa"
+            android:id="@+id/igra3pocetak_rijeci"
+            android:layout_marginTop="10px"
+            android:layout_toStartOf="@+id/igra3unos"
+            android:layout_toLeftOf="@+id/igra3unos"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

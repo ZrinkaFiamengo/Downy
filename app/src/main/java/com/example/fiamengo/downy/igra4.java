@@ -16,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.Random;
 
 
@@ -226,6 +225,7 @@ public class igra4 extends FragmentActivity { //fragment jer ne želim traku s n
             @Override
             public void onClick(View v) {
                 level=np.getValue();    //postavi level na odabrani
+                max_id=db.maxSlike(level); //postavi ukupan broj redaka u tablici na trenutnoj tezini
                 Postavi();  //postavi novu sliku odabrane tezine
                 d.dismiss();    //zatvori dijalog
             }
